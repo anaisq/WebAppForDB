@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>AWBD Online Store</title>
+
+  <link rel="stylesheet" href="/webjars/bootstrap/4.5.0/css/bootstrap.min.css"/>
+  <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/webjars/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/webjars/font-awesome/6.2.0/css/all.min.css"/>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="nav-link" th:href="@{'/store'}"> <i class="fas fa-home mx-1"></i>  </a>
+      <a class="nav-link" th:href="@{'/store'}"> <i class="fas fa-user mx-1"></i>  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto topnav">
+
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{'/products'}">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{'/orders'}">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white" type="button" th:href="@{'/products/form'}" >&emsp;Add Product&emsp;</a>
+          </li>&nbsp;
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white" type="button" th:href="@{'/login'}" >Sign In</a>
+          </li>&nbsp;
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white" type="button" th:href="@{'/login?logout'}" th:action="perform_logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </nav>
+  </div>
+</head>
+<body>
+<!--<body width="100%" bgcolor="#F1F1F1" style="margin: 0; mso-line-height-rule: exactly;">-->
+<!--<center style="width: 100%; background: #F1F1F1; text-align: left;">-->
+<!--  <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>-->
+<!--  <div style="max-width: 680px; margin: auto;" class="email-container">-->
+<!--    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;" class="email-container">-->
+<!--      <tr>-->
+<!--        <td bgcolor="#333333">-->
+<!--          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">-->
+<!--            <tr>-->
+<!--              <td style="padding: 30px 40px 30px 40px; text-align: center;"> <span style="color:#fff; font-size: 30px">Platforma selling</span> </td>-->
+<!--            </tr>-->
+<!--          </table>-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td background="https://i.imgur.com/CTGrvGc.png" bgcolor="#222222" align="center" valign="top" style="text-align: center; background-position: center center !important; background-size: cover !important;">-->
+<!--          <div>-->
+<!--            <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:500px; margin: auto;">-->
+<!--              <tr>-->
+<!--                <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                <td align="center" valign="middle">-->
+<!--                  <table>-->
+<!--                    <tr>-->
+<!--                      <td valign="top" style="text-align: center; padding: 60px 0 10px 20px;">-->
+<!--                        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 30px; line-height: 36px; color: #ffffff; font-weight: bold;"></h1>-->
+<!--                      </td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                      <td valign="top" align="center" style="text-align: center; padding: 15px 0px 60px 0px;">-->
+<!--                        <center>-->
+<!--                          <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="text-align: center;">-->
+<!--                            <tr>-->
+<!--                              <td style="border-radius: 50px; background: #26a4d3; text-align: center;" class="button-td"> <span></span> </td>-->
+<!--                            </tr>-->
+<!--                          </table>-->
+<!--                        </center>-->
+<!--                      </td>-->
+<!--                    </tr>-->
+<!--                  </table>-->
+<!--                </td>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>-->
+<!--              </tr>-->
+<!--            </table>-->
+<!--          </div>-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--    </table>-->
+<!--  </div>-->
+<!--</center>-->
+</body>
+</html>
